@@ -31,23 +31,6 @@ An interactive web application for analyzing NSE stock data by sector, leveragin
 - Python 3.8 or later
 - Required libraries: `streamlit`, `yfinance`, `seaborn`, `matplotlib`, `pandas`
 
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/nse-stock-data-viewer.git
-   cd nse-stock-data-viewer
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run the application:
-   ```bash
-   streamlit run app.py
-   ```
-
 ---
 
 ## Usage
@@ -75,28 +58,12 @@ nse-stock-data-viewer/
 
 ---
 
-## Example Visualizations
-
-### Percentage Change Histogram
-![Percentage Change Histogram Example](example_images/percentage_histogram.png)
-
-### Heat Map
-![Heat Map Example](example_images/heat_map.png)
-
----
-
 ## Future Enhancements
 
 - Add real-time data fetching and live updates.
 - Include additional EDA components like moving averages or Bollinger Bands.
 - Provide options for exporting analyzed data to CSV or Excel.
 - Optimize performance for handling larger datasets.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
