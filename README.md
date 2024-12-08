@@ -1,3 +1,4 @@
+
 # NSE Stock Data Viewer
 
 An interactive web application for analyzing NSE stock data by sector, leveraging **Streamlit**, **yFinance**, and **Seaborn** for data visualization and exploration.
@@ -30,21 +31,83 @@ An interactive web application for analyzing NSE stock data by sector, leveragin
 - Python 3.8 or later
 - Required libraries: `streamlit`, `yfinance`, `seaborn`, `matplotlib`, `pandas`
 
-Usage
-* Start the app using the command above.
-* Use the sidebar to:
-  - Select a date range.
-  - Filter by sector or search for specific companies.
-  - Choose the companies for analysis.
-* Click Submit Selection to fetch stock data.
-* View the analysis through the EDA components selected in the sidebar.
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/nse-stock-data-viewer.git
+   cd nse-stock-data-viewer
+   ```
 
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-File Structure
+3. Run the application:
+   ```bash
+   streamlit run app.py
+   ```
 
+---
+
+## Usage
+
+1. Start the app using the command above.
+2. Use the sidebar to:
+   - Select a date range.
+   - Filter by sector or search for specific companies.
+   - Choose the companies for analysis.
+3. Click **Submit Selection** to fetch stock data.
+4. View the analysis through the EDA components selected in the sidebar.
+
+---
+
+## File Structure
+
+```plaintext
 nse-stock-data-viewer/
 ├── app.py               # Main Streamlit application script
 ├── requirements.txt     # Required Python libraries
 ├── nse_companies.py     # NSE company data grouped by sector
 ├── README.md            # Project documentation
 └── data/                # (Optional) Directory for storing fetched data
+```
+
+---
+
+## Example Visualizations
+
+### Percentage Change Histogram
+![Percentage Change Histogram Example](example_images/percentage_histogram.png)
+
+### Heat Map
+![Heat Map Example](example_images/heat_map.png)
+
+---
+
+## Future Enhancements
+
+- Add real-time data fetching and live updates.
+- Include additional EDA components like moving averages or Bollinger Bands.
+- Provide options for exporting analyzed data to CSV or Excel.
+- Optimize performance for handling larger datasets.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contributions
+
+Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request.
+
+---
+
+## Acknowledgements
+
+- **[Streamlit](https://streamlit.io/):** For the seamless app-building experience.
+- **[yFinance](https://pypi.org/project/yfinance/):** For fetching stock data effortlessly.
+- **[Seaborn](https://seaborn.pydata.org/):** For beautiful and informative visualizations.
